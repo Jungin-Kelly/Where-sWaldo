@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where`s Waldo?</title>
+</head>
+<style>
+    #ninleft{
+        position: absolute;
+    }
+    #ninright{
+        position: absolute;
+        left :1135px;
+    }
+    .displayBox{
+        position:relative;
+        border-style: solid; 
+        left: 225px;
+        top:325px;
+
+        padding-top: 253px;
+        padding-left: 446px;
+        border-left-width: 21px;
+        padding-right: 470px;
+        border-right-width: 21px;
+        border-top-width: 21px;
+        border-bottom-width: 21px;
+        padding-bottom: 247px;
+
+        word-break: break-all;
+    }
+</style>
+<body>
+    <span class="Layout">
+        <img id="ninleft" src="ninleft.png">
+    </span>
+
+    <span class="Layout">
+        <img id="ninright" src ="ninright.png">
+    </span>
+
+    <span class="display">
+      <!--  <img id="title1" src="title1.png">
+       <img id="title2" src="title2.png">  -->
+    </span>
+
+    <span class="displayBox"></span>
+</body>
+</html>
