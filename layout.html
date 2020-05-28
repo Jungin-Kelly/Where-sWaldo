@@ -6,16 +6,18 @@
     <title>Where`s Waldo?</title>
 </head>
 <style>
-      body{
+    body{
         background-color:rgb(83,87,91);
     }
     #ninleft{
         position: absolute;
+        left: 8px;
     }
     #ninright{
         position: absolute;
-        left :1135px;
+        left :1135px; 
     }
+    
     .displayBox{
         position:absolute;
         border: 20px;
@@ -25,30 +27,17 @@
         height: 522px;
         width: 918px;
         word-break: break-all;
-        background-image: url(whereswaldotitle.jpg);
-        background-size:cover;
-        background-repeat: no-repeat;
-        }
-   #place{
-    text-align:right;
-     position: absolute;
-     bottom: 49px; right: 80px;
-   }
+    }
+  
+   
 </style>
-
-
 <body>
+    <div class="center" style="text-align: center">
     <span class="Layout">
         <img id="ninleft" src="ninleft.png">
         <img id="ninright" src ="ninright.png">
     </span>
-
-    <span class="displayBox">
-         <!-- 여기에 링크 넣기  -->
-        <input id = "place" type=button onClick="location.href='nextpg.html'" value='start!'>   
-    </span>
-
-    
-    
+    <span class="displayBox"></span>
+</div>
 </body>
 </html>
