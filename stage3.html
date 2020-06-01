@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where`s Waldo?</title>
+</head>
+<script>
+    alert('축하포카~!~!~ 윌리를 잡았어요. 너무 쉬웠죠?ㅋ 이번 윌리는 도망쳐요. 도망치는 월리를 잡아요!!')
+</script>
+<style>
+    body{
+        background-color:rgb(83,87,91);
+    }
+    #ninleft{
+        position: absolute;
+    }
+    #ninright{
+        position: absolute;
+        left :1135px;
+    }
+    #wally{
+        position: relative;
+        margin-top: 400px;
+        margin-left: 100px;
+        width:45px;
+        height:45px;
+        z-index: 10;
+    }
+    #dotbogi{
+        position: absolute;
+        margin-top: 476px;
+        margin-left: 482px;
+        width:37px;
+        height: 35px;
+        z-index: 10;
+    }
+    .displayBox{
+        position:absolute;
+        border: 20px;
+        border-style: solid; 
+        left: 233px;
+        top: 60px;
+        height: 522px;
+        width: 918px;
+        word-break: break-all;
+        background-image: url("waldo3-1.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        }
+    #place{
+     text-align:right;
+     position: absolute;
+     bottom: 49px; right: 80px;
+   }
+</style>
+
+
+<body>
+    <span class="Layout">
+        <img id="ninleft" src="ninleft.png">
+        <img id="ninright" src ="ninright.png">
+        
+        
+    </span>
+
+    <span class="displayBox">
+        
+         <!-- 여기에 링크 넣기  -->
+         <img id="wally"  src="title3.png"
+         onmouseover="
+         document.querySelector('#wally').style.left=(Math.random()*500)-100 + 'px';
+         document.querySelector('#wally').style.right=(Math.random()*500)-100 + 'px';
+         "
+         onclick="location.href='stage33.html'"
+         >
+
+    </span>
+
+    
+    
+</body>
+</html>
