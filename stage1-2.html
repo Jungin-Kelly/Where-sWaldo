@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where`s Waldo?</title>
+</head>
+<script>
+    alert('축하드려요! 그러나 윌리가 다시 숨었습니다!')
+</script>
+<style>
+      body{
+        background-color:rgb(83,87,91);
+    }
+    #ninleft{
+        position: absolute;
+    }
+    #ninright{
+        position: absolute;
+        left :1135px;
+    }
+    #wally{
+        position: relative;
+        margin-top: 421px;
+        margin-left: 347px;
+        width:35px;
+        height: 45px;
+        z-index: 10;
+    }
+    #dotbogi{
+        position: absolute;
+        margin-top: 462px;
+        margin-left: 774px;
+        width:27px;
+        height: 29px;
+        z-index: 10;
+    }
+    .displayBox{
+        position:absolute;
+        border: 20px;
+        border-style: solid; 
+        left: 233px;
+        top: 60px;
+        height: 522px;
+        width: 918px;
+        word-break: break-all;
+        background-image: url(stage1-2.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        }
+   #place{
+    text-align:right;
+     position: absolute;
+     bottom: 49px; right: 80px;
+   }
+</style>
+
+
+<body>
+    <span class="Layout">
+        <img id="ninleft" src="ninleft.png">
+        <img id="ninright" src ="ninright.png">
+        
+        
+    </span>
+
+    <span class="displayBox">
+         <!-- 여기에 링크 넣기  -->
+         <img id="wally"  src="title3.png" onClick="location.href='stage2.html'">  
+    </span>
+
+    
+    
+</body>
+</html>
