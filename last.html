@@ -6,7 +6,7 @@
     <title>Where`s Waldo?</title>
 </head>
 <script>
-    alert('축하해요!!! 돋보기를 찾았습니다~! 이제 월리를 찾아볼까요??')
+    alert('밤이 되면 월리가 나타납니다!\n닌텐도의 X버튼을 눌러 밤으로 바꿔주세요.')
 </script>
 <style>
       body{
@@ -19,12 +19,18 @@
         position: absolute;
         left :1135px;
     }
+    #nightbtn{
+        position:absolute;
+        left: 1256px;
+        top: 139px;
+        height: 40px;
+    }
     #wally{
         position: relative;
         margin-top: 172px;
         margin-left: 660px;
-        width:51px;
-        height: 66px;
+        width:30px;
+        height: 40px;
         z-index: 10;
     }
     #dotbogi{
@@ -44,7 +50,7 @@
         height: 522px;
         width: 918px;
         word-break: break-all;
-        background-image: url(bg1.jpg);
+        background-image: url(last.jpg);
         background-size:cover;
         background-repeat: no-repeat;
         z-index: 1;
@@ -61,13 +67,14 @@
     <span class="Layout">
         <img id="ninleft" src="ninleft.png">
         <img id="ninright" src ="ninright.png">
+        <img id="nightbtn" src ="nightbtn.png"
+        onclick="location.href='lastnight.html'">
         
         
     </span>
 
     <span class="displayBox">
          <!-- 여기에 링크 넣기  -->
-         <img id="wally"  src="title3.png" onClick="location.href='stage22.html'">  
     </span>
 
     
